@@ -7,6 +7,7 @@ import uidata from "../constants/uidata";
 import HomeHeader from "../components/HomeHeader";
 import CategoryList from "../components/CategoryList";
 import ChoicesList from "../components/ChoicesList";
+import Heading from "../components/Heading";
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -33,6 +34,10 @@ const Home = () => {
               setSelectedChoice={setSelectedChoice}
               setSelectedSection={setSelectedSection}
             />
+
+            <View>
+              <Heading heading={"Nearby Restaurants"} onPress={() => {}} />
+            </View>
           </ScrollView>
         </View>
       </View>
