@@ -8,6 +8,7 @@ import HomeHeader from "../components/HomeHeader";
 import CategoryList from "../components/CategoryList";
 import ChoicesList from "../components/ChoicesList";
 import Heading from "../components/Heading";
+import NearByRestaurants from "../components/NearByRestaurants";
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -37,6 +38,8 @@ const Home = () => {
 
             <View>
               <Heading heading={"Nearby Restaurants"} onPress={() => {}} />
+
+              <NearByRestaurants />
             </View>
           </ScrollView>
         </View>
